@@ -1,0 +1,754 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+* {box-sizing:border-box}
+
+
+
+.slideshow, .tops {
+  display: none;
+  opacity: 0.6;
+   
+   
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: .6}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: .6}
+}
+
+
+.mmdtitle {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 6vw; 
+  font-weight: 600;
+  z-index: 20;
+  position: fixed;
+  bottom: 35%;
+  left: 60%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+
+
+.mmdtitle2 {
+  font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+  color: white;
+  font-size: 3vw; 
+  
+  z-index: 20;
+  position: fixed;
+  bottom: 26%;
+  left: 70%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+
+#homeicon {
+    z-index: 20;
+    height: 75px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+
+
+.button{
+  margin-left: 60%;
+  color: black; 
+  outline: none;
+  background: transparent;
+  border: 1px solid black;
+  padding: 17px 80px;
+  text-transform: uppercase;
+  font-family: classico-urw, sans-serif; 
+    font-weight: 700;
+  line-height: 2;
+  position: relative;
+    display: inline-block;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.button:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #E56E39;
+  z-index: -1;
+  transform: translate3D(0,-100%,0); 
+  transition: all .5s;
+}
+
+.button:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+.slide:after{
+  top: 0;
+  z-index: -1;
+  transform: translate3D(-101%,0,0);
+}
+
+.slide:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+article {
+    margin: auto;
+    font-family: classico-urw, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+     width: 36em;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+     font-size: 60px;
+    font-weight: 400;
+    padding-left: 10%;
+
+}
+
+
+@-webkit-keyframes fadein {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadein {
+  from {opacity: .0}
+  to {opacity: 1}
+}
+
+.slide-in {
+	-webkit-animation: slide-in 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in{
+  0% {
+    -webkit-transform: translateX(-1400px);
+            transform: translateX(-1400px);
+      opacity: 0;
+ 
+  }
+  65% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+   
+  }
+    
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(-1400px);
+            transform: translateX(-1400px);
+      opacity: 0;
+   
+  }
+  65% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+   
+  }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide-in2 {
+	-webkit-animation: slide-in2 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in2 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in2{
+  0% {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+      opacity: 0;
+ 
+  }
+  65% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+   
+  }
+    
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slide-in2 {
+  0% {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+      opacity: 0;
+   
+  }
+  65% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+   
+  }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+     font-size: 40px;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+     font-size: 50px;
+    font-weight: 400;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+
+.scroll{
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: all 2s;
+}
+
+.scroll.appear {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+ .scroll2 {
+    opacity: 1;
+    transform: translate(0, 20px);
+    transition: all 2s;
+}
+
+.sidebar {
+     position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    grid-area: sidebar;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 10;
+    background-color: black;
+    overflow: hidden;
+}
+
+.sidebar img {
+height: 100vh;
+object-fit: contain;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: black;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.header img{
+    object-fit: contain;
+    height: 70vh;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.main {
+    grid-area: main;
+}
+
+.project img, .project2 img {
+    margin-left: 10%;
+    width: 50vw;
+    margin-top: 5%;
+}
+
+.project {
+    grid-area: project;
+}
+
+.project2 {
+    grid-area: project2;
+    margin-bottom: 8%;
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas:
+            "main main main main main sidebar sidebar"
+            "project project project project project sidebar sidebar"
+            "project2 project2 project2 project2 project2 sidebar sidebar"
+    }
+    
+    .header {
+        display: none;
+    }
+     #homeicon2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1280px) and (min-width: 1140px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas:
+            "main main main main main sidebar sidebar"
+            "project project project project project sidebar sidebar"
+            "project2 project2 project2 project2 project2 sidebar sidebar"
+    }
+    
+    #homeicon2 {
+        display: none;
+    }
+    
+    .header {
+        display: none;
+    }
+    
+    article {
+        width: 33em;
+    }
+    
+    .button {
+            padding: 15px 65px;
+            margin-left: 55%;
+        }
+}
+
+
+ @media only screen and (max-width:1140px) and (min-width: 900px) {
+   .container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas:
+            "main main main main main sidebar sidebar"
+            "project project project project project sidebar sidebar"
+            "project2 project2 project2 project2 project2 sidebar sidebar"
+    }
+         article {
+     width: 27em;
+}
+        
+         .button {
+            padding: 15px 55px;
+            margin-left: 45%;
+             margin-top: 30px;
+        }
+        
+        h1 {
+            font-size: 50px;
+        }
+        
+        h2 {
+            font-size: 30px;
+            padding-top: 10%;
+        }
+         .header {
+        display: none;
+    }
+     
+      #homeicon2 {
+        display: none;
+    }
+        
+       
+}
+
+
+    @media only screen and (max-width:900px) and (min-width: 650px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+            "header header header header header"
+            "main main main main main"
+            "project project project project project"
+            "project2 project2 project2 project2 project2"
+            
+        
+    }
+        
+        h1 {
+            font-size: 50px;
+        }
+        
+        h2 {
+            font-size: 40px;
+            padding-top: 10%;
+        }
+        
+      
+        
+        .sidebar {
+            display: none;
+        }
+        
+        .mmdtitle {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 8vw; 
+  font-weight: 600;
+  z-index: 20;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+
+        #homeicon {
+            position: absolute;
+        }
+        
+
+
+.mmdtitle2 {
+  font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+  color: white;
+  font-size: 5vw; 
+  
+  z-index: 20;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+        
+        article {
+            padding-left: 5%;
+            padding-right: 5%;
+            
+        }
+        
+        .button {
+            padding: 14px 45px;
+        }
+        
+        
+        .project img, .project2 img {
+    margin-left: 12%;
+    width: 75vw;
+    margin-top: 5%;
+}
+        
+}
+
+  @media only screen and (max-width:650px) and (min-width: 440px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+            "header header header header header"
+            "main main main main main"
+            "project project project project project"
+            "project2 project2 project2 project2 project2"
+            
+        
+    }
+              h1 {
+            font-size: 50px;
+        }
+        
+        h2 {
+            font-size: 30px;
+            padding-top: 10%;
+        }
+        
+        .sidebar {
+            display: none;
+        }
+      
+       #homeicon {
+            position: absolute;
+        }
+      
+  
+        
+        .mmdtitle {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 11vw; 
+  font-weight: 600;
+  z-index: 20;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+
+
+.mmdtitle2 {
+  font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+  color: white;
+  font-size: 7vw; 
+  
+  z-index: 20;
+  position: absolute;
+  top: 47%;
+  left: 60%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+      
+      .button {
+          padding: 14px 40px;
+          margin-left: 30%;
+      }
+      
+      article {
+          width: 24em;
+      }
+      
+          .project img, .project2 img {
+    margin-left: 12%;
+    width: 75vw;
+    margin-top: 5%;
+}
+      
+}
+
+
+
+  @media only screen and (max-width: 440px) and (min-width: 370px){
+     .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+            "header header header header header"
+            "main main main main main"
+            "project project project project project"
+            "project2 project2 project2 project2 project2"
+            
+        
+    }
+      
+       #homeicon {
+            position: absolute;
+        }
+      
+
+      
+              h1 {
+            font-size: 37px;
+        }
+        
+        h2 {
+            font-size: 25px;
+            padding-top: 10%;
+        }
+      
+      h3 {
+          font-size: 30px;
+      }
+        
+        .sidebar {
+            display: none;
+        }
+        
+        .mmdtitle {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 12vw; 
+  font-weight: 600;
+  z-index: 20;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+
+
+.mmdtitle2 {
+  font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+  color: white;
+  font-size: 8vw; 
+  
+  z-index: 20;
+  position: absolute;
+  top: 47%;
+  left: 57%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+      
+      .button {
+          padding: 14px 40px;
+          margin-left: 30%;
+      }
+      
+      article {
+          width: 16em;
+      }
+      
+            .project img, .project2 img {
+    margin-left: 12%;
+    width: 75vw;
+    margin-top: 5%;
+}
+      
+}
+
+@media only screen and (max-width: 370px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+            "header header header header header"
+            "main main main main main"
+            "project project project project project"
+            "project2 project2 project2 project2 project2"
+            
+        
+    }
+             h1 {
+            font-size: 35px;
+        }
+        
+        h2 {
+            font-size: 25px;
+            padding-top: 10%;
+        }
+      
+      h3 {
+          font-size: 30px;
+      }
+        
+        .sidebar {
+            display: none;
+        }
+        
+     #homeicon {
+            position: absolute;
+        }
+    
+
+    
+    
+        .mmdtitle {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 12vw; 
+  font-weight: 600;
+  z-index: 20;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+
+
+.mmdtitle2 {
+  font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+  color: white;
+  font-size: 8vw; 
+  
+  z-index: 20;
+  position: absolute;
+  top: 47%;
+  left: 57%;
+  text-shadow: 1px 1px 7px black; 
+  
+    
+    
+}
+      
+      .button {
+          padding: 14px 37px;
+          margin-left: 25%;
+      }
+      
+      article {
+          width: 16em;
+      }
+    
+          .project img, .project2 img {
+    margin-left: 12%;
+    width: 75vw;
+    margin-top: 5%;
+}
+      
+}
