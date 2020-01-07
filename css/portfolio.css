@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: aliceblue;
     overflow-x: hidden;
+  
 }
 
 * {box-sizing:border-box}
@@ -44,7 +45,7 @@ body {
   position: fixed;
   bottom: 35%;
   left: 60%;
-  text-shadow: 1px 1px 7px black; 
+  text-shadow: 1px 1px 11px black; 
   
     
     
@@ -62,7 +63,7 @@ body {
   position: fixed;
   bottom: 26%;
   left: 70%;
-  text-shadow: 1px 1px 7px black; 
+  text-shadow: 1px 1px 11px black; 
   
     
     
@@ -82,7 +83,7 @@ body {
   position: relative;
     display: inline-block;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   cursor: pointer;
   overflow: hidden;
   transition: all .5s;
@@ -117,7 +118,7 @@ body {
   transition: all .5s;
 }
 
-article {
+p {
     margin: auto;
     font-family: classico-urw, sans-serif;
 
@@ -273,7 +274,7 @@ h2 {
 
 .portfolio5 {
     grid-area: portfolio5;
-    margin-bottom: 8%;
+    margin-bottom: 100px;
     
 }
 
@@ -283,8 +284,8 @@ h2 {
 
 .scroll{
     opacity: 0;
-    transform: translate(0, 20px);
-    transition: all 2s;
+    transform: translate(0, 40px);
+    transition: all 3s;
 }
 
 .scroll.appear {
@@ -293,15 +294,22 @@ h2 {
 }
 
  .scroll2 {
+    opacity: 0;
+    transition: all 3s;
+}
+
+
+.scroll2.appear {
     opacity: 1;
-    transform: translate(0, 20px);
-    transition: all 2s;
+    transition: all 3s;
 }
 
 .sidebar {
      position: -webkit-sticky;
   position: sticky;
   top: 0;
+  right: 0;
+   
     grid-area: sidebar;
     overflow: hidden;
     height: 100vh;
@@ -310,7 +318,9 @@ h2 {
     overflow: hidden;
 }
 
-.sidebar img {
+.sidebar img { 
+    
+    overflow: hidden;
 height: 100vh;
 object-fit: contain;
 
@@ -370,7 +380,7 @@ object-fit: contain;
         
     }
         
-        article {
+        p {
      width: 33em;
 }
         
@@ -399,7 +409,7 @@ object-fit: contain;
             
         
     }
-         article {
+         p {
      width: 27em;
 }
         
@@ -487,7 +497,7 @@ object-fit: contain;
     
 }
         
-        article {
+        p {
             padding-left: 5%;
             padding-right: 5%;
             
@@ -564,7 +574,7 @@ object-fit: contain;
           margin-left: 30%;
       }
       
-      article {
+      p {
           width: 24em;
       }
       
@@ -638,7 +648,7 @@ object-fit: contain;
           margin-left: 30%;
       }
       
-      article {
+      p {
           width: 16em;
       }
       
@@ -710,7 +720,7 @@ object-fit: contain;
           margin-left: 30%;
       }
       
-      article {
+     p {
           width: 16em;
       }
       

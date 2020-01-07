@@ -311,7 +311,7 @@ object-fit: contain;
     grid-area: main;
 }
 
-.project img, .project2 img {
+.project img, .project2 img, .project3 img {
     margin-left: 10%;
     width: 50vw;
     margin-top: 5%;
@@ -323,9 +323,13 @@ object-fit: contain;
 
 .project2 {
     grid-area: project2;
-    margin-bottom: 8%;
+   
 }
 
+.project3 {
+    grid-area: project3;
+    margin-bottom: 7%;
+}
 
 @media only screen and (min-width: 1280px) {
     .container {
@@ -335,24 +339,24 @@ object-fit: contain;
             "main main main main main sidebar sidebar"
             "project project project project project sidebar sidebar"
             "project2 project2 project2 project2 project2 sidebar sidebar"
+            "project3 project3 project3 project3 project3 sidebar sidebar"
     }
     
     .header {
         display: none;
     }
-     #homeicon2 {
-        display: none;
-    }
+
 }
 
 @media only screen and (max-width:1280px) and (min-width: 1140px) {
-    .container {
+     .container {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas:
             "main main main main main sidebar sidebar"
             "project project project project project sidebar sidebar"
             "project2 project2 project2 project2 project2 sidebar sidebar"
+            "project3 project3 project3 project3 project3 sidebar sidebar"
     }
     
     #homeicon2 {
@@ -375,13 +379,14 @@ object-fit: contain;
 
 
  @media only screen and (max-width:1140px) and (min-width: 900px) {
-   .container {
+    .container {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas:
             "main main main main main sidebar sidebar"
             "project project project project project sidebar sidebar"
             "project2 project2 project2 project2 project2 sidebar sidebar"
+            "project3 project3 project3 project3 project3 sidebar sidebar"
     }
          p {
      width: 27em;
@@ -422,6 +427,7 @@ object-fit: contain;
             "main main main main main"
             "project project project project project"
             "project2 project2 project2 project2 project2"
+            "project3 project3 project3 project3 project3"
             
         
     }
@@ -490,7 +496,7 @@ object-fit: contain;
         }
         
         
-        .project img, .project2 img {
+        .project img, .project2 img, .project3 img {
     margin-left: 12%;
     width: 75vw;
     margin-top: 5%;
@@ -507,11 +513,12 @@ object-fit: contain;
             "main main main main main"
             "project project project project project"
             "project2 project2 project2 project2 project2"
+            "project3 project3 project3 project3 project3"
             
         
     }
               h1 {
-            font-size: 50px;
+            font-size: 45px;
         }
         
         h2 {
@@ -567,11 +574,11 @@ object-fit: contain;
           margin-left: 30%;
       }
       
-      p {
+     p {
           width: 24em;
       }
       
-          .project img, .project2 img {
+          .project img, .project2 img, .project3 img {
     margin-left: 12%;
     width: 75vw;
     margin-top: 5%;
@@ -590,6 +597,7 @@ object-fit: contain;
             "main main main main main"
             "project project project project project"
             "project2 project2 project2 project2 project2"
+            "project3 project3 project3 project3 project3"
             
         
     }
@@ -655,11 +663,11 @@ object-fit: contain;
           margin-left: 30%;
       }
       
-     p {
+      p {
           width: 16em;
       }
       
-            .project img, .project2 img {
+            .project img, .project2 img, .project3 img {
     margin-left: 12%;
     width: 75vw;
     margin-top: 5%;
@@ -676,11 +684,12 @@ object-fit: contain;
             "main main main main main"
             "project project project project project"
             "project2 project2 project2 project2 project2"
+            "project3 project3 project3 project3 project3"
             
         
     }
              h1 {
-            font-size: 35px;
+            font-size: 37px;
         }
         
         h2 {
@@ -745,7 +754,7 @@ object-fit: contain;
           width: 16em;
       }
     
-          .project img, .project2 img {
+          .project img, .project2 img, .project3 img {
     margin-left: 12%;
     width: 75vw;
     margin-top: 5%;

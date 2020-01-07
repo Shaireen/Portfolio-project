@@ -13,7 +13,7 @@ document.getElementById("strb").addEventListener("click", windowOpen11);
 var Window11;
 
 function windowOpen11() {
-    Window11 = window.open("4BasicContent/foodsharing_storyboard.pdf", "_blank", "width=800, height=600");
+    Window11 = window.open("../4BasicContent/foodsharing_storyboard.pdf", "_blank", "width=800, height=600");
 }
 
 document.getElementById("pitch").addEventListener("click", windowOpen12);
@@ -21,7 +21,7 @@ document.getElementById("pitch").addEventListener("click", windowOpen12);
 var Window12;
 
 function windowOpen12() {
-    Window12 = window.open("4BasicContent/Presentation.pdf", "_blank", "width=800, height=600");
+    Window12 = window.open("../4BasicContent/Presentation.pdf", "_blank", "width=800, height=600");
 }
 
 
@@ -32,5 +32,5 @@ document.getElementById("homeicon").addEventListener("click", TabOpen);
 var Tab;
 
 function TabOpen() {
-    Tab = window.location.replace("index.html");
+    Tab = window.location.replace("../index.html#dtheme4");
 }

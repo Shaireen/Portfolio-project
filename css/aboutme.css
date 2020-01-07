@@ -44,7 +44,7 @@ body {
   position: fixed;
   bottom: 35%;
   left: 60%;
-  text-shadow: 1px 1px 7px black; 
+  text-shadow: 1px 1px 11px black; 
   
     
     
@@ -62,7 +62,7 @@ body {
   position: fixed;
   bottom: 26%;
   left: 70%;
-  text-shadow: 1px 1px 7px black; 
+  text-shadow: 1px 1px 11px black; 
   
     
     
@@ -272,10 +272,16 @@ h3 {
 }
 
  .scroll2 {
-    opacity: 1;
-    transform: translate(0, 20px);
-    transition: all 2s;
+    opacity: 0;
+    transition: all 3s;
 }
+
+
+.scroll2.appear {
+    opacity: 1;
+    transition: all 3s;
+}
+
 
 .sidebar {
      position: -webkit-sticky;
@@ -515,6 +521,13 @@ object-fit: contain;
     margin-top: 5%;
 }
         
+        .main img {
+       margin-left: 27%;
+     margin-top: 10%;
+            width: 45vw;
+    }
+
+        
 }
 
   @media only screen and (max-width:650px) and (min-width: 440px){
@@ -601,6 +614,13 @@ object-fit: contain;
     width: 75vw;
     margin-top: 5%;
 }
+      
+      .main img {
+       margin-left: 25%;
+     margin-top: 10%;
+            width: 50vw;
+    }
+
       
 }
 
@@ -691,6 +711,12 @@ object-fit: contain;
     width: 75vw;
     margin-top: 5%;
 }
+      .main img {
+       margin-left: 20%;
+     margin-top: 10%;
+            width: 60vw;
+    }
+
       
 }
 
@@ -780,6 +806,11 @@ object-fit: contain;
     margin-top: 5%;
 }
     
+        .main img {
+       margin-left: 20%;
+     margin-top: 10%;
+            width: 60vw;
+    }
    
       
 }
